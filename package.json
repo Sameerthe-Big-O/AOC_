@@ -1,0 +1,11 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "This repository contains all the solutions for the Advent of Code 2023",
+  "main": "Day-1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sameer Ijaz",
+  "license": "MIT"
+}
