@@ -12,6 +12,7 @@ const separatorFunc = (line) => {
   const separateGame = line.split(':');
   const sets = separateGame[1].split(';');
   const separateCube = sets.map((set) => set.split(','));
+  //*the reason we use the flat here is that we got the 2d array back so just make it one d Array and looping throug the 2D array
   const cube = separateCube
     .map((cubes) =>
       cubes.map((cube) => {
@@ -39,6 +40,7 @@ const findPossibleGames = (data) => {
     if (game) {
       const values = separatorFunc(game);
       if (values[1][0] <= 12 && values[1][1] <= 13 && values[1][2] <= 14) {
+        console.log(values[1]);
         console.log(values[1][0], values[1][1], values[1][2]);
         result += values[0];
       }
@@ -48,3 +50,4 @@ const findPossibleGames = (data) => {
 };
 
 console.log('answer', findPossibleGames(data));
+console.log('answer', findPossibleGames(dat));
